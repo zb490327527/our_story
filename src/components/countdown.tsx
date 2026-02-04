@@ -85,7 +85,7 @@ export function Countdown({ startDate, title = "我们在一起" }: CountdownPro
             { value: timeElapsed.seconds, label: "秒" },
           ].map((item, index) => (
             <div key={index} className="flex flex-col items-center">
-              <div className="w-full aspect-square flex items-center justify-center bg-card rounded-2xl border border-border shadow-sm">
+              <div className="w-full aspect-square flex items-center justify-center bg-card rounded-2xl border border-gray-200 shadow-sm">
                 <span className="text-3xl md:text-5xl font-light text-foreground tabular-nums">
                   {item.value.toString().padStart(2, "0")}
                 </span>
